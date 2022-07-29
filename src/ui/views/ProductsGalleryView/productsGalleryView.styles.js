@@ -1,8 +1,7 @@
 export const galleryStyles = {
   gridContainer: {
-    padding: "60px ",
-    // height: "500px",
-    // display: 'flex',
+    padding: { xs: "40px 10px", sm: '20px 30px', md: "20px 60px" },
+    height: "480px",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: 'primary.main',
@@ -22,9 +21,4 @@ export const galleryStyles = {
     margin: '6px 0px',
     backgroundColor: '#C0C0C0',
   },
-  gridProduct: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap"
-  }
 };

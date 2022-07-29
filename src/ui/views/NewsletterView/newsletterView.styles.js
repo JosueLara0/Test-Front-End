@@ -1,23 +1,23 @@
 export const newsletterStyles = {
   gridContainer: {
-    height: "146px",
-    display: 'flex',
+    height: { xs: '320px', md: '146px' },
     justifyContent: "space-evenly",
     alignItems: "center",
-    backgroundColor: 'secondary.grayF2'
+    backgroundColor: 'secondary.grayF2',
+    textAlign: "center"
   },
   typo: {
-    font: 'normal normal 900 22px/24px Lato, sans serif',
+    font: '900 22px/24px Lato, sans serif',
     letterSpacing: '0px',
     opacity: 1,
     color: 'secondary.black33'
   },
   button: {
     height: '48px',
-    width: '140px',
+    width: { xs: '80vw', md: '140px' },
     backgroundColor: 'secondary.main',
     color: 'primary.main',
-    borderRadius: '0px',
+    borderRadius: { xs: '6px', md: '0px' },
     textTransform: 'none'
   }
 };

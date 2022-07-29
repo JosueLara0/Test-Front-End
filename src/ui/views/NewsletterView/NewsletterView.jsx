@@ -43,37 +43,41 @@ export const NewsletterView = () => {
         ¡Únete a nuestras novedades y promociones!
       </Typography>
 
-      <form>
-        <Grid container justifyContent="center" alignItems="center" spacing={2}>
-          <Grid item>
-            <Input
-              label="Ingresa tu nombre"
-              type="text"
-              name="name"
-              onChange={onInputChange}
-            />
-          </Grid>
-
-          <Grid item>
-            <Input
-              label="Ingresa tu mail"
-              type="email"
-              name="email"
-              onChange={onInputChange}
-            />
-          </Grid>
-
-          <Grid item>
-            <Button
-              variant="contained"
-              sx={styles.button}
-              onClick={onClickButton}
-            >
-              Suscribirme
-            </Button>
-          </Grid>
+      <Grid
+        container
+        justifyContent="center"
+        direction={{ xs: "column", md: "row" }}
+        alignItems="center"
+        spacing={2}
+      >
+        <Grid item>
+          <Input
+            label="Ingresa tu nombre"
+            type="text"
+            name="name"
+            onChange={onInputChange}
+          />
         </Grid>
-      </form>
+
+        <Grid item>
+          <Input
+            label="Ingresa tu mail"
+            type="email"
+            name="email"
+            onChange={onInputChange}
+          />
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            sx={styles.button}
+            onClick={onClickButton}
+          >
+            Suscribirme
+          </Button>
+        </Grid>
+      </Grid>
     </Grid>
   );
 };

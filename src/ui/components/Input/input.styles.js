@@ -1,8 +1,8 @@
 export const inputStyles = {
     textField: {
-        // height:'48px',
-        width: '280px',
+        width: { xs: '80vw', md: '280px' },
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '5px',
+        zIndex: 0
     }
 };

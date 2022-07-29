@@ -1,0 +1,55 @@
+/*? REACT SLICK ARROW CUSTOM CSS */
+.react__slick__slider__parent {
+  position: relative;
+}
+
+.react__slick__slider__parent .slick-prev,
+.react__slick__slider__parent .slick-next {
+  position: absolute;
+  top: 50%;
+}
+.react__slick__slider__parent .slick-prev {
+  color: #000000;
+  z-index: 1;
+}
+.react__slick__slider__parent .slick-next {
+  border-radius: 50%;
+  color: #000000;
+  z-index: 1;
+}
+
+.react__slick__slider__parent .slick-prev:before,
+.slick-next:before {
+  color: #000000;
+}
+
+/*? REACT SLICK DOTS CUSTOM CSS */
+.button__bar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+}
+
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.button__bar li button {
+  border: none;
+  background: #bdbdbd;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.button__bar li.slick-active button {
+  background-color: #f8475f;
+}

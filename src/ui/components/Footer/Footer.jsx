@@ -1,18 +1,21 @@
 //* libraries
 import { Grid, Typography, Button, Box } from "@mui/material";
-//* icons
-import EmailIcon from "@mui/icons-material/Email";
-import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
-import corebizLogo from "../../assets/logo-corebiz-white.svg";
-import vtexLogo from "../../assets/logo-vtex.svg";
 //* styles
 import { footerStyles as styles } from "./footer.styles";
+//* icons
+import { HeadsetMic, Email } from "@mui/icons-material";
+import corebizLogo from "../../assets/logo-corebiz-white.svg";
+import vtexLogo from "../../assets/logo-vtex.svg";
 
 export const Footer = () => {
   return (
-    <Grid container sx={styles.gridContainer}>
+    <Grid
+      container
+      direction={{ xs: "column", md: "row" }}
+      sx={styles.gridContainer}
+    >
       {/*//?  Location */}
-      <Grid item>
+      <Grid item sx={styles.gridLocation}>
         <Typography sx={styles.typoTitle}>Ubicación</Typography>
         <Box sx={styles.boxBar}></Box>
         <Typography sx={styles.typoLocation}>
@@ -26,11 +29,7 @@ export const Footer = () => {
       {/*//?  Buttons  */}
       <Grid item>
         <Grid>
-          <Button
-            variant="contained"
-            sx={styles.button}
-            startIcon={<EmailIcon />}
-          >
+          <Button variant="contained" sx={styles.button} startIcon={<Email />}>
             <Typography sx={styles.typoButton}>CONTÁCTANOS</Typography>
           </Button>
         </Grid>
@@ -39,7 +38,7 @@ export const Footer = () => {
           <Button
             variant="contained"
             sx={styles.button}
-            startIcon={<HeadsetMicIcon />}
+            startIcon={<HeadsetMic />}
           >
             <Typography sx={styles.typoButton}>
               HABLA CON UN CONSULTOR

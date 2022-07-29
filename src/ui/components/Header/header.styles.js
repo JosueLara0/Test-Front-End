@@ -1,50 +1,42 @@
-export const HeaderStyles = {
+export const headerStyles = {
     gridContainer: {
-        padding: "16px 0px 23px 0px",
-        height: "80px",
-        display: 'flex',
-        justifyContent: "space-evenly",
+        height: { xs: "125px", md: "80px" },
+        paddingTop: { xs: "10px 0px 20px 0px", md: "16px 0px 23px 0px" },
         alignItems: "center",
-        backgroundColor: 'primary.main'
+        justifyContent: "space-evenly",
+        borderBottom: "1px solid #000000",
+        backgroundColor: 'primary.main',
+        position: 'fixed',
+        top: '0',
+        zIndex: 1
     },
-    iconButton: {
-        marginRight: 2,
-        display: { sm: "none" }
+    gridMobile: {
+        justifyContent: "space-evenly",
+        alignItems: "center"
     },
     boxLogo: {
-        height: "40px"
-    },
-    textField: {
-        // height: '27px',
-        width: '500px',
-    },
-    searchIcon: {
-        color: "#000000"
-    },
-    gridIcon: {
-        display: "flex",
-        alignItems: "center"
+        height: { xs: "28px", sm: '33px', md: "40px" },
     },
     icon: {
         paddingRight: "5px",
-        color: "secondary.black",
+        color: "secondary.main",
     },
     typoAccount: {
         textAlign: "left",
-        font: 'normal 13px/18px Nunito, sans-serif',
+        font: 'normal 15px/18px Nunito, sans-serif',
         letterSpacing: ' 0px',
         color: 'secondary.gray',
     },
     typoCart: {
-        width: '14px',
-        height: '14px',
-        borderRadius: '50%',
-        color: 'primary.main',
-        font: 'bold 10px/26px Nunito, sans-serif',
-        background: '0% 0% no-repeat padding-box',
-        backgroundColor: "error.main",
+        width: '25px',
+        height: '25px',
         display: 'flex',
         justifyContent: "space-evenly",
         alignItems: "center",
+        borderRadius: '50%',
+        background: '0% 0% no-repeat padding-box',
+        backgroundColor: "error.main",
+        font: 'bold 14px/26px Nunito, sans-serif',
+        color: 'primary.main',
     }
 };

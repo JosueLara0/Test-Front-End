@@ -1,5 +1,8 @@
 //* theme
 import { AppTheme } from "./theme";
+//* carousel styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 //* context
 import { UserProvider } from "./ui/context/UserProvider";
 //* pages

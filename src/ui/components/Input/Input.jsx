@@ -1,5 +1,6 @@
 //* libraries
 import { TextField } from "@mui/material";
+import PropTypes from "prop-types";
 //* styles
 import { inputStyles as styles } from "./input.styles";
 
@@ -21,4 +22,12 @@ export const Input = ({ label, type, name, onChange }) => {
       onChange={onChange}
     />
   );
+};
+
+//? Props validations
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
