@@ -1,66 +1,82 @@
 //* libraries
 import { useContext } from "react";
-import { Grid, Typography, TextField, IconButton, Box } from "@mui/material";
+import { Grid, Typography, IconButton, Box } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
+//* styles
+import { headerStyles as styles } from "./header.styles";
 //* icons
-import { MenuOutlined } from "@mui/icons-material";
-import SearchIcon from "@mui/icons-material/Search";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { MenuOutlined, ShoppingCart } from "@mui/icons-material";
+import { PersonOutlineOutlined } from "@mui/icons-material";
 import corebizLogo from "../../assets/logo-corebiz-black.svg";
+//* components
+import { Searcher } from "../Searcher/Searcher";
 //* context
 import { UserContext } from "../../context/UserContext";
-//* styles
-import { HeaderStyles as styles } from "./header.styles";
 
 export const Header = () => {
+  const is640px = useMediaQuery("(max-width:640px)");
   const { cart } = useContext(UserContext);
 
+  //? Small screens view
+  if (is640px) {
+    return (
+      <Grid container sx={styles.gridContainer}>
+        <Grid container sx={styles.gridMobile}>
+          {/*//?  Mobile Menu  */}
+          <IconButton>
+            <MenuOutlined sx={styles.icon} fontSize="large" />
+          </IconButton>
+
+          {/*//?  Logo  */}
+          <IconButton>
+            <Box
+              component="img"
+              sx={styles.boxLogo}
+              src={corebizLogo}
+              alt="Corebiz"
+            />
+          </IconButton>
+
+          {/*//?  Shopping Cart  */}
+          <IconButton>
+            <ShoppingCart sx={styles.icon} />
+            <Typography sx={styles.typoCart}>{cart}</Typography>
+          </IconButton>
+        </Grid>
+
+        {/*//?  Searcher  */}
+        <Searcher />
+      </Grid>
+    );
+  }
+
+  //? Large screens view
   return (
-    <Grid container direction="row" sx={styles.gridContainer}>
-      {/*//?  Mobile Menu  */}
-      <IconButton color="inherit" edge="start" sx={styles.iconButton}>
-        <MenuOutlined />
+    <Grid container sx={styles.gridContainer}>
+      {/*//?  Logo  */}
+      <IconButton>
+        <Box
+          component="img"
+          sx={styles.boxLogo}
+          src={corebizLogo}
+          alt="Corebiz"
+        />
       </IconButton>
 
-      {/*//?  Logo  */}
-      <Box
-        component="img"
-        sx={styles.boxLogo}
-        src={corebizLogo}
-        alt="Corebiz"
-      />
-
       {/*//?  Searcher  */}
-      <TextField
-        label="¿Qué estás buscando?"
-        sx={styles.textField}
-        variant="standard"
-        InputLabelProps={{
-          style: {
-            font: "normal normal normal 13px/27px Nunito",
-            color: "#7A7A7A",
-          },
-        }}
-        InputProps={{
-          endAdornment: (
-            <IconButton title="Buscar" aria-label="Buscar">
-              <SearchIcon fontSize="medium" style={styles.searchIcon} />
-            </IconButton>
-          ),
-        }}
-      />
+      <Searcher />
 
       {/*//?  My account  */}
-      <Grid sx={styles.gridIcon}>
-        <PersonOutlineOutlinedIcon sx={styles.icon} fontSize="medium" />
+      <IconButton>
+        <PersonOutlineOutlined sx={styles.icon} fontSize="large" />
         <Typography sx={styles.typoAccount}>Mi Cuenta</Typography>
-      </Grid>
+      </IconButton>
 
       {/*//?  Shopping Cart  */}
-      <Grid sx={styles.gridIcon}>
-        <ShoppingCartIcon sx={styles.icon} fontSize="medium" />
+      <IconButton>
+        <ShoppingCart sx={styles.icon} fontSize="large" />
         <Typography sx={styles.typoCart}>{cart}</Typography>
-      </Grid>
+      </IconButton>
     </Grid>
   );
 };

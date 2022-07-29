@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <ProductItem/> should make match with the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-wkpw2c"
+  >
+    <div
+      class="MuiBox-root css-k008qs"
+    >
+      <img
+        alt="Boots"
+        aria-label="productImg"
+        class="MuiBox-root css-0"
+        src="https://media2.giphy.com/media/oxbNORcXx76F2/giphy.gif?cid=aa030f39gigshg8jcumtz662xsloyek0d7jblzpwqvqnxuhh&rid=giphy.gif&ct=g"
+      />
+      <div
+        class="MuiBox-root css-1dxz2xi"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-11anhiy-MuiTypography-root"
+        >
+          OFF
+        </p>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-17b89uf"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-19r6slh-MuiTypography-root"
+      >
+        Boots
+      </p>
+      <span
+        aria-label="4 Stars"
+        class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-1cyf8jp-MuiRating-root"
+        role="img"
+      >
+        <span>
+          <span
+            class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="StarIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span>
+          <span
+            class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="StarIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span>
+          <span
+            class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="StarIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span>
+          <span
+            class="MuiRating-icon MuiRating-iconFilled css-7qmtgc-MuiRating-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="StarIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </span>
+        </span>
+        <span>
+          <span
+            class="MuiRating-icon MuiRating-iconEmpty css-1c99szj-MuiRating-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="StarBorderIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+              />
+            </svg>
+          </span>
+        </span>
+      </span>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1l3kfgd-MuiTypography-root"
+      >
+        de $ 10
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-9qu0jp-MuiTypography-root"
+      >
+        por $ 20
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-2wt4ze-MuiTypography-root"
+      >
+        o en 4x de R $ 100
+      </p>
+    </div>
+  </div>
+</div>
+`;

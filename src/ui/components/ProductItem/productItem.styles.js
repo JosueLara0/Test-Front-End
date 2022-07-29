@@ -1,6 +1,5 @@
 export const productItemStyles = {
     box: {
-        marginRight: '50px',
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

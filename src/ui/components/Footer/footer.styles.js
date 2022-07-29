@@ -1,13 +1,15 @@
 export const footerStyles = {
     gridContainer: {
-        // padding: "25px 0px 25px 0px",
-        height: "213px",
-        display: 'flex',
-        // flexDirection: 'row',
+        padding: { xs: "25px 0px", md: '0px' },
+        minHeight: "213px",
         justifyContent: "space-evenly",
         alignItems: "center",
         backgroundColor: 'secondary.main',
         color: 'primary.main'
+    },
+    gridLocation: {
+        width: { xs: "80%", md: 'auto' },
+        marginBottom: { xs: '20px', md: '0px' }
     },
     typoTitle: {
         font: 'bold 20px Nunito, sans serif',
@@ -25,7 +27,7 @@ export const footerStyles = {
         letterSpacing: '0px',
     },
     button: {
-        width: '229px',
+        width: { xs: "270px", md: '230px' },
         color: 'secondary.main',
         marginBottom: '25px',
     },
@@ -34,7 +36,9 @@ export const footerStyles = {
         letterSpacing: '0px',
     },
     gridLogo: {
+        width: { xs: "100%", md: 'auto' },
         display: 'flex',
+        justifyContent: "space-evenly",
     },
     boxLogo: {
         marginRight: '28px',
