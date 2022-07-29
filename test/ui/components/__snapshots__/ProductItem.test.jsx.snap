@@ -33,7 +33,7 @@ exports[`Tests in <ProductItem/> should make match with the snapshot 1`] = `
         Boots
       </p>
       <span
-        aria-label="4 Stars"
+        aria-label="rating"
         class="MuiRating-root MuiRating-sizeMedium MuiRating-readyOnly css-1cyf8jp-MuiRating-root"
         role="img"
       >

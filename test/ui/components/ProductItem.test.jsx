@@ -46,4 +46,65 @@ describe("Tests in <ProductItem/>", () => {
     expect(src).toBe(imageUrl);
     expect(alt).toBe(productName);
   });
+
+  test("should show OFF text if listPrice exists and his value", () => {
+    render(
+      <ProductItem
+        imageUrl={imageUrl}
+        installments={installments}
+        listPrice={listPrice}
+        price={price}
+        productName={productName}
+        stars={stars}
+        increment={increment}
+      />
+    );
+
+    const off = screen.getByText("OFF");
+    expect(off).toBeTruthy();
+
+    const listPriceValue = screen.getByText(`de $ ${listPrice}`);
+    expect(listPriceValue).toBeTruthy();
+  });
+
+  test("should show productName, price and rating stars", () => {
+    render(
+      <ProductItem
+        imageUrl={imageUrl}
+        installments={installments}
+        price={price}
+        productName={productName}
+        stars={stars}
+        increment={increment}
+      />
+    );
+
+    const productNameValue = screen.getByText(productName);
+    expect(productNameValue).toBeTruthy();
+
+    const productPriceValue = screen.getByText(`por $ ${price}`);
+    expect(productPriceValue).toBeTruthy();
+
+    const rating = screen.getByLabelText("rating");
+    expect(rating).toBeTruthy();
+  });
+
+  test("should show quantity and value text if installments exist", () => {
+    render(
+      <ProductItem
+        imageUrl={imageUrl}
+        installments={installments}
+        listPrice={listPrice}
+        price={price}
+        productName={productName}
+        stars={stars}
+        increment={increment}
+      />
+    );
+
+    const text = screen.getByText(
+      `o en ${installments[0]?.quantity}x de R $ ${installments[0]?.value}`
+    );
+    expect(text).toBeTruthy();
+  });
 });

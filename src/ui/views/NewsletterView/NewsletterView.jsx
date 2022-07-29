@@ -34,7 +34,6 @@ export const NewsletterView = () => {
     }
 
     postData(url, payload, alerts);
-    onResetForm();
   };
 
   return (
