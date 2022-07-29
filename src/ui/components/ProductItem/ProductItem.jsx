@@ -47,7 +47,13 @@ export const ProductItem = ({
       >
         <Typography sx={styles.typoName}>{productName}</Typography>
 
-        <Rating name="read-only" value={stars} readOnly sx={styles.rating} />
+        <Rating
+          aria-label="rating"
+          name="read-only"
+          value={stars}
+          readOnly
+          sx={styles.rating}
+        />
 
         {listPrice && (
           <Typography
